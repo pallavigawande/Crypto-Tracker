@@ -1,0 +1,19 @@
+.back-to-top-btn {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  margin: 1.5rem;
+  cursor: pointer;
+}
+/* .back-to-top-btn:hover {
+  background-color: var(--blue);
+  color: var(--white) !important;
+} */

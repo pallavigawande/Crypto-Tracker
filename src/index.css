@@ -1,13 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #111;
+  --blue: #3a80e9;
+  --gray: #888;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  /* height: 200vh; */
+  font-family: "Inter", sans-serif;
+}
+::selection {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+a {
+  color: var(--white) !important;
+  text-decoration: none !important;
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+.grey-wrapper {
+  background-color: var(--darkgrey);
+  display: block;
+  margin: 1.5rem auto;
+  width: 90%;
+  border-radius: 0.8rem;
+  padding: 1rem 1rem !important;
+}
+.coins-days-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem;
+  gap: 2rem;
 }
